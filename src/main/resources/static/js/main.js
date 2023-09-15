@@ -214,56 +214,56 @@ function btnDetele(id) {
 }
 
 
-function showCategory() {
-    html = "";
-    my_data.forEach(function(item) {
-        html+= `
-        <div class="grid_column-2-4">
-                                        <div class="home-product-item">
-                                            <div class="home-product-item--img" style="background-image: url(./access/img/img-${item.id}.jpg);">
-                                            </div>
-                                            <h4 class="home-product-item_name">${item.name}</h4>
-                                            <div class="home-product-item_price">
-                                                <span class="home-product-item_price-old">1.200.000đ</span>
-                                                <span class="home-product-item_price-current">${item.price}</span>
-                                            </div>
-                                            <div class="home-product-item_action">
-                                                <span class="home-product-item_like " > 
-                                                    <i class="home-product-item_like-empty fa-regular fa-heart"></i>
-                                                    <i class="home-product-item_like-fill fa-solid fa-heart"></i>
-                                                </span>
-                                                <div class="home-product-item_rating">
-                                                    <i class="home-product-item_rated fa-sharp fa-solid fa-star"></i>
-                                                    <i class="home-product-item_rated fa-sharp fa-solid fa-star"></i>
-                                                    <i class="home-product-item_rated fa-sharp fa-solid fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </div>
-                                                <span class="home-product-item_sold">88 Đã bán</span>
-                                            </div>
-                                                <div class="home-product-item_origin">
-                                                    <span class="home-product-item_brand">Who?</span>
-                                                    <span class="home-product-item_origin-name">Việt Nam</span>
-                                                </div>
-                                                <div class="home-product-item_favorite">
-                                                    <i class="fa-solid fa-check"></i>
-                                                    <span class="home-product-item_favorite-status">Yêu thích</span>
-                                                </div>
-                                                <div class="home-product-item_sale-off">
-                                                    <span class="home-product-item_sale-off-percent">10%</span>
-                                                    <span class="home-product-item_sale-off-lable">GIẢM</span>
-                                                </div>
-                                                <div class="container-btn-click">
-
-                                                    <button class="add-my-wrap" onclick="CreaterCategory(${item.id})">Thêm vào giỏ hàng</button>
-                                                </div>
-                                        </div>
-                                    </div>
-        `
-    });
-    document.querySelector('.main_row_category').innerHTML = html;
-
-}
+// function showCategory() {
+//     html = "";
+//     my_data.forEach(function(item) {
+//         html+= `
+//         <div class="grid_column-2-4">
+//                                         <div class="home-product-item">
+//                                             <div class="home-product-item--img" style="background-image: url(./access/img/img-${item.id}.jpg);">
+//                                             </div>
+//                                             <h4 class="home-product-item_name">${item.name}</h4>
+//                                             <div class="home-product-item_price">
+//                                                 <span class="home-product-item_price-old">1.200.000đ</span>
+//                                                 <span class="home-product-item_price-current">${item.price}</span>
+//                                             </div>
+//                                             <div class="home-product-item_action">
+//                                                 <span class="home-product-item_like " >
+//                                                     <i class="home-product-item_like-empty fa-regular fa-heart"></i>
+//                                                     <i class="home-product-item_like-fill fa-solid fa-heart"></i>
+//                                                 </span>
+//                                                 <div class="home-product-item_rating">
+//                                                     <i class="home-product-item_rated fa-sharp fa-solid fa-star"></i>
+//                                                     <i class="home-product-item_rated fa-sharp fa-solid fa-star"></i>
+//                                                     <i class="home-product-item_rated fa-sharp fa-solid fa-star"></i>
+//                                                     <i class="fa-regular fa-star"></i>
+//                                                     <i class="fa-regular fa-star"></i>
+//                                                 </div>
+//                                                 <span class="home-product-item_sold">88 Đã bán</span>
+//                                             </div>
+//                                                 <div class="home-product-item_origin">
+//                                                     <span class="home-product-item_brand">Who?</span>
+//                                                     <span class="home-product-item_origin-name">Việt Nam</span>
+//                                                 </div>
+//                                                 <div class="home-product-item_favorite">
+//                                                     <i class="fa-solid fa-check"></i>
+//                                                     <span class="home-product-item_favorite-status">Yêu thích</span>
+//                                                 </div>
+//                                                 <div class="home-product-item_sale-off">
+//                                                     <span class="home-product-item_sale-off-percent">10%</span>
+//                                                     <span class="home-product-item_sale-off-lable">GIẢM</span>
+//                                                 </div>
+//                                                 <div class="container-btn-click">
+//
+//                                                     <button class="add-my-wrap" onclick="CreaterCategory(${item.id})">Thêm vào giỏ hàng</button>
+//                                                 </div>
+//                                         </div>
+//                                     </div>
+//         `
+//     });
+//     document.querySelector('.main_row_category').innerHTML = html;
+//
+// }
 
 function priceHigher() {
     // console.log(this);
